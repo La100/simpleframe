@@ -26,7 +26,26 @@ async function fetchAPI(query = '', { variables }: Record<string, any> = {}) {
   }
   return json.data
 }
+export async function getSubpagesWithACF() {
+  const data = await fetchAPI(`
+    query Podstrony {
+      pages {
+        edges {
+          node {
+            podstrony {
+              pierwszaCzescTekstu
+              shortcodeGrid
+              drugaCzescTekstu
+              shortcodeGridDrugi
+            }
+          }
+        }
+      }
+    }
+  `)
 
+  return data?.pages
+}
 export async function getPreviewPost(id, idType = 'DATABASE_ID') {
   const data = await fetchAPI(
     `
@@ -209,4 +228,36 @@ export async function getPostAndMorePosts(slug, preview, previewData) {
   if (data.posts.edges.length > 2) data.posts.edges.pop()
 
   return data
+}
+export async function getAllPagesWithSlugs() {
+  const data = await fetchAPI(`
+  {
+    pages(first: 10000) {
+      edges {
+        node {
+          slug
+           
+        }
+      }
+    }
+  }
+  `);
+  return data?.pages;
+}
+export async function getPageBySlug(slug) {
+  const data = await fetchAPI(`
+  {
+    page(id: "${slug}", idType: URI) {
+      title
+      content
+      podstrony {
+        pierwszaCzescTekstu
+        shortcodeGrid
+        drugaCzescTekstu
+        shortcodeGridDrugi
+      }
+    }
+  }
+  `);
+  return data?.page;
 }

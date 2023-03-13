@@ -7,11 +7,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'accent-1': '#FAFAFA',
-        'accent-2': '#EAEAEA',
-        'accent-7': '#333',
-        success: '#0070f3',
-        cyan: '#79FFE1',
+        szary: '#404040',
+        babyblue: '#19b5fe',
       },
       spacing: {
         28: '7rem',
