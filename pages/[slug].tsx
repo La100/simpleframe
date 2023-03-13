@@ -4,6 +4,7 @@ import Container from '../components/container'
 import Header from '../components/header'
 import Layout from '../components/layout'
 import { Children } from 'react';
+import React from 'react';
 
 function Page(page) {
     return (
@@ -20,16 +21,12 @@ function Page(page) {
           className='text-base text-grey-darker'
           dangerouslySetInnerHTML={{ __html: page.podstrony.pierwszaCzescTekstu }}
         ></div>
-        <div>
-          {page.podstrony.shortcodeGrid}
-        </div>
+        <div> {page.podstrony.shortcodeGrid} </div>
         <div
           className='text-base text-grey-darker'
           dangerouslySetInnerHTML={{ __html: page.podstrony.pierwszaCzescTekstu }}
         ></div>
-         <div>
-          {page.podstrony.shortcodeGrid}
-        </div>
+          <div>{page.podstrony.shortcodeGridDrugi}</div>
      </div>
      
       </Container>

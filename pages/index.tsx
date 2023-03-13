@@ -19,9 +19,7 @@ export default function Index({ allPosts: { edges }, preview }) {
       </Head>
       <Container>
         <Header />
-        
-          
-        {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+        test
       </Container>
     </Layout>
   )
