@@ -14,10 +14,31 @@ export default function Index({ allPosts: { edges }, preview }) {
       <Head>
         <title>Simple Frame</title>
       </Head>
-      <Container>
-        <Header />
-      
-      </Container>
+      <div className="z-99">
+      <Header/>
+      </div>
+       
+        <div className="relative">
+        <div className="bg-hero-section bg-no-repeat h-screen bg-center bg-cover ">
+          <video autoPlay loop muted className="absolute inset-0 object-cover h-screen xl:h-auto grayscale">
+            <source
+              src="/video3.mp4"
+              type="video/mp4"
+            />
+          </video>
+         
+          <div className="absolute inset-0">
+          
+            <div className="w-100px sm:text-5xl text-4xl font-thin sm:my-56 my-32 mx-16 text-center text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores cum nobis reprehenderit sequi explicabo at.
+            </div>
+            </div>
+       
+        
+        </div>
+
+      </div>
+     
     </Layout>
   )
 }

@@ -50,12 +50,12 @@ function classNames(...classes) {
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
-    <header className="bg-black absolute w-full left-0">
+    <header className="bg-black absolute w-full left-0 z-10">
     <nav className="mx-auto flex max-w-8xl items-center justify-between p-6 lg:px-14" aria-label="Global">
       <div className="flex lg:flex-1">
-        <a href="#" className="-m-1.5 p-1.5">
+        <a href="/" className="-m-1.5 p-1.5 ">
           <span className="sr-only">Your Company</span>
-          <img className="h-auto w-auto" src="../logo.png" alt="" />
+          <img className="h-auto w-auto sm:w-3/4 " src="../logo.png" alt="" />
         </a>
       </div>
       <div className="flex lg:hidden">
@@ -91,11 +91,11 @@ export default function Header() {
                     key={item.name}
                     className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-black-50"
                   >
-                    <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-black-50 group-hover:bg-black">
-                      <item.icon className="h-6 w-6 text-white group-hover:text-indigo-600" aria-hidden="true" />
+                    <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-black-50 group-hover:bg-grey">
+                      <item.icon className="h-6 w-6 text-white group-hover:text-babyblue" aria-hidden="true" />
                     </div>
                     <div className="flex-auto">
-                      <a href={item.href} className="block font-semibold text-white">
+                      <a href={item.href} className="block font-semibold text-white group-hover:text-babyblue">
                         {item.name}
                         <span className="absolute inset-0" />
                       </a>
@@ -131,13 +131,13 @@ export default function Header() {
                 {animacje.map((item) => (
                   <div
                     key={item.name}
-                    className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-black-50"
+                    className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-black-50 "
                   >
-                    <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-black-50 group-hover:bg-black">
-                      <item.icon className="h-6 w-6 text-white group-hover:text-indigo-600" aria-hidden="true" />
+                    <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-black-50 group-hover:bg-black group-hover:text-babyblue">
+                      <item.icon className="h-6 w-6 text-white group-hover:text-babyblue" aria-hidden="true" />
                     </div>
                     <div className="flex-auto">
-                      <a href={item.href} className="block font-semibold text-white">
+                      <a href={item.href} className="block font-semibold text-white group-hover:text-babyblue">
                         {item.name}
                         <span className="absolute inset-0" />
                       </a>
@@ -151,7 +151,7 @@ export default function Header() {
           </Transition>
         </Popover>
         <Popover className="relative">
-          <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white focus:outline-none">
+          <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white focus:outline-none ">
             Usługi
             <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
           </Popover.Button>
@@ -165,18 +165,18 @@ export default function Header() {
             leaveFrom="opacity-100 translate-y-0"
             leaveTo="opacity-0 translate-y-1"
           >
-            <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-black shadow-lg ring-1 ring-white/5">
+            <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-black shadow-lg ring-1 ring-white/5 group-hover:text-babyblue">
               <div className="p-4">
                 {uslugi.map((item) => (
                   <div
                     key={item.name}
-                    className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-black-50"
+                    className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-black-50 group-hover:text-babyblue"
                   >
-                    <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-black-50 group-hover:bg-black">
-                      <item.icon className="h-6 w-6 text-white group-hover:text-indigo-600" aria-hidden="true" />
+                    <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-black-50 group-hover:bg-black group-hover:text-babyblue">
+                      <item.icon className="h-6 w-6 text-white group-hover:text-babyblue" aria-hidden="true" />
                     </div>
                     <div className="flex-auto">
-                      <a href={item.href} className="block font-semibold text-white">
+                      <a href={item.href} className="block font-semibold text-white group-hover:text-babyblue">
                         {item.name}
                         <span className="absolute inset-0" />
                       </a>
