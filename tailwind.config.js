@@ -9,6 +9,8 @@ module.exports = {
       colors: {
         szary: '#404040',
         babyblue: '#19b5fe',
+        mainblack:'000000',
+        mainwhite: '#ffffff',
       },
       spacing: {
         28: '7rem',

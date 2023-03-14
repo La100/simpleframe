@@ -15,11 +15,11 @@ export default function Index({ allPosts: { edges }, preview }) {
   return (
     <Layout preview={preview}>
       <Head>
-        <title>{`Next.js Blog Example with ${CMS_NAME}`}</title>
+        <title>Simple Frame</title>
       </Head>
       <Container>
         <Header />
-        test
+      
       </Container>
     </Layout>
   )
