@@ -13,24 +13,24 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const produkcje = [
-  { name: 'Film Reklamowy', description:'Skuteczna reklama wideo dla Twojego biznesu', href: '#', icon: ChartPieIcon },
-  { name: 'Film Korporacyjny', description: 'Profesjonalna prezentacja Twojej firmy', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Film Promocyjny', description: 'Zachęć swoich klientów do zakupów ', href: '#', icon: FingerPrintIcon },
-  { name: 'Film Produktowy', description: 'Pokaż swoje produkty w najlepszym świetle', href: '#', icon: SquaresPlusIcon },
-  { name: 'Film Wizerunkowy', description: 'Zwiększ rozpoznawalność swojej marki', href: '#', icon: ArrowPathIcon },
-  { name: 'Film Szkoleniowy', description: 'Wspomóż rozwój swojego biznesu', href: '#', icon: SquaresPlusIcon },
-  { name: 'Montaż filmów', description: 'Zaoszczędź czas i powierz montaż swojego filmu naszym profesjonalnym edytorom', href: '#', icon: ArrowPathIcon },
-  { name: 'Dron', description: 'Osiągnij nowe perspektywy i zaskocz swoich odbiorców', href: '#', icon: ArrowPathIcon },
+  { name: 'Film Reklamowy', description:'Skuteczna reklama wideo dla Twojego biznesu', href: '/film-reklamowy', icon: ChartPieIcon },
+  { name: 'Film Korporacyjny', description: 'Profesjonalna prezentacja Twojej firmy', href: '/film-korporacyjny', icon: CursorArrowRaysIcon },
+  { name: 'Film Promocyjny', description: 'Zachęć swoich klientów do zakupów ', href: '/film-promocyjny', icon: FingerPrintIcon },
+  { name: 'Film Produktowy', description: 'Pokaż swoje produkty w najlepszym świetle', href: '/film-produktowy', icon: SquaresPlusIcon },
+  { name: 'Film Wizerunkowy', description: 'Zwiększ rozpoznawalność swojej marki', href: '/film-wizerunkowy', icon: ArrowPathIcon },
+  { name: 'Film Szkoleniowy', description: 'Wspomóż rozwój swojego biznesu', href: '/film-szkoleniowy', icon: SquaresPlusIcon },
+  { name: 'Montaż filmów', description: 'Zaoszczędź czas i powierz montaż swojego filmu naszym profesjonalnym edytorom', href: '/montaz-filmow', icon: ArrowPathIcon },
+  { name: 'Dron', description: 'Osiągnij nowe perspektywy i zaskocz swoich odbiorców', href: '/dron-filmowanie-z-powietrza', icon: ArrowPathIcon },
 ];
 
 const animacje = [
-  { name: 'Animacja 3D', description: 'Ożyw swoje pomysły w trójwymiarowej przestrzeni', href: '#', icon: ChartPieIcon },
-  { name: 'Animacja 2D', description: 'Zaprojektuj animację dopasowaną do Twojej marki', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Animacja Techniczna', description: 'Wyjaśnij skomplikowane tematy w prosty sposób', href: '#', icon: FingerPrintIcon },
-  { name: 'Produkcja Animacji', description: 'Stwórz wyjątkową animację od pomysłu po finalny efekt', href: '#', icon: SquaresPlusIcon },
-  { name: 'Animacja Produktowa', description: 'Przedstaw swoje produkty w nowoczesny i innowacyjny sposób', href: '#', icon: ArrowPathIcon },
-  { name: 'Motion Design', description: 'Nadaj dynamiki Twoim projektom z pomocą animacji motion design', href: '#', icon: SquaresPlusIcon },
-  { name: 'Video Explainer', description: 'Przedstaw swoją ofertę w sposób prosty i przystępny', href: '#', icon: ArrowPathIcon },
+  { name: 'Animacja 3D', description: 'Ożyw swoje pomysły w trójwymiarowej przestrzeni', href: '/animacja-3d', icon: ChartPieIcon },
+  { name: 'Animacja 2D', description: 'Zaprojektuj animację dopasowaną do Twojej marki', href: '/animacja-2d', icon: CursorArrowRaysIcon },
+  { name: 'Animacja Techniczna', description: 'Wyjaśnij skomplikowane tematy w prosty sposób', href: '/animacja-techniczna', icon: FingerPrintIcon },
+  { name: 'Produkcja Animacji', description: 'Stwórz wyjątkową animację od pomysłu po finalny efekt', href: '/produkcja-animacji', icon: SquaresPlusIcon },
+  { name: 'Animacja Produktowa', description: 'Przedstaw swoje produkty w nowoczesny i innowacyjny sposób', href: '/animacja-produktowa', icon: ArrowPathIcon },
+  { name: 'Motion Design', description: 'Nadaj dynamiki Twoim projektom z pomocą animacji motion design', href: '/motion-design', icon: SquaresPlusIcon },
+  { name: 'Video Explainer', description: 'Przedstaw swoją ofertę w sposób prosty i przystępny', href: '/video-explainer', icon: ArrowPathIcon },
 ];
 const uslugi = [
   { name: 'Billboard Sponsorski', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
@@ -50,7 +50,7 @@ function classNames(...classes) {
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
-    <header className="bg-black absolute w-full left-0 z-10 opacity:1">
+    <header className="bg-black absolute w-full left-0 z-10 ">
     <nav className="mx-auto flex max-w-8xl items-center justify-between p-6 lg:px-14" aria-label="Global">
       <div className="flex lg:flex-1">
         <a href="/" className="-m-1.5 p-1.5 ">
@@ -189,7 +189,7 @@ export default function Header() {
             </Popover.Panel>
           </Transition>
         </Popover>
-        <a href="#" className="text-sm font-semibold leading-6 text-white">
+        <a href="/blog" className="text-sm font-semibold leading-6 text-white">
           Blog
         </a>
       
