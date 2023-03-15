@@ -250,12 +250,6 @@ export async function getPageBySlug(slug) {
     page(id: "${slug}", idType: URI) {
       title
       content
-      podstrony {
-        pierwszaCzescTekstu
-        shortcodeGrid
-        drugaCzescTekstu
-        shortcodeGridDrugi
-      }
     }
   }
   `);
