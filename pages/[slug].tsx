@@ -19,9 +19,9 @@ function Page(page) {
         <div className='mb-5 text-4xl font-bold mt-12'>{page.title}</div>
         <div
           className='text-base text-grey-darker'
-          dangerouslySetInnerHTML={{ __html: page.podstrony.shortcodeGrid }}
+          dangerouslySetInnerHTML={{ __html: page.podstrony.shortcodeGrid.content }}
         ></div>
-    
+    {page.podstrony.shortcodeGrid}
         <div
           className='text-base text-grey-darker'
           dangerouslySetInnerHTML={{ __html: page.podstrony.pierwszaCzescTekstu }}
