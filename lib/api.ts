@@ -249,7 +249,7 @@ export async function getPageBySlug(slug) {
   {
     page(id: "${slug}", idType: URI) {
       title
-      content(format: RENDERED)
+      content
       podstrony {
         pierwszaCzescTekstu
         shortcodeGrid

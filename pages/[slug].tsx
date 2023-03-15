@@ -15,18 +15,18 @@ function Page(page) {
       </Head>
       <Container>
         <Header />
-        <div className='flex flex-col p-10 space-y-8' >
+       <div className='flex flex-col p-10 space-y-8' >
         <div className='mb-5 text-4xl font-bold mt-12'>{page.title}</div>
         <div
           className='text-base text-grey-darker'
-          dangerouslySetInnerHTML={{ __html: page.podstrony.pierwszaCzescTekstu }}
+          dangerouslySetInnerHTML={{ __html: page.podstrony.shortcodeGrid }}
         ></div>
-        <div>{page.podstrony.shortcodeGrid}</div>
+    
         <div
           className='text-base text-grey-darker'
           dangerouslySetInnerHTML={{ __html: page.podstrony.pierwszaCzescTekstu }}
         ></div>
-          <div>{page.podstrony.shortcodeGridDrugi}</div>
+         
      </div>
      
       </Container>
