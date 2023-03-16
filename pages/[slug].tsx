@@ -36,20 +36,20 @@ function Page(page) {
         
         <div
           className='text-base text-grey-darker'
-          dangerouslySetInnerHTML={{ __html: page.podstrony.pierwszaCzescTekstu}}
+          dangerouslySetInnerHTML={{ __html: page.podstrony?.pierwszaCzescTekstu}}
         ></div>
       
         <div
           className='text-base text-grey-darker'
-          dangerouslySetInnerHTML={{ __html: page.podstrony.shortcodeGrid}}
+          dangerouslySetInnerHTML={{ __html: page.podstrony?.shortcodeGrid}}
         ></div>
         <div
           className='text-base text-grey-darker'
-          dangerouslySetInnerHTML={{ __html: page.podstrony.drugaCzescTekstu }}
+          dangerouslySetInnerHTML={{ __html: page.podstrony?.drugaCzescTekstu }}
         ></div>
         <div
           className='text-base text-grey-darker'
-          dangerouslySetInnerHTML={{ __html: page.podstrony.shortcodeGridDrugi}}
+          dangerouslySetInnerHTML={{ __html: page.podstrony?.shortcodeGridDrugi}}
         ></div>
          
      </div>
