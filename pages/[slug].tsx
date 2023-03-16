@@ -8,6 +8,9 @@ import React from 'react';
 import Image from 'next/image'
 
 function Page(page) {
+  const replaceBrTags = () => {
+   
+  }
     return (
 
         <Layout preview={Children}>
@@ -27,20 +30,23 @@ function Page(page) {
           <script type='text/javascript' src='https://simpleframe.pl/wp-content/plugins/modula-best-grid-gallery/assets/js/front/fancybox.js?ver=2.7.3' id='modula-fancybox-js'></script>
           <script type='text/javascript' src='https://simpleframe.pl/wp-content/plugins/modula-best-grid-gallery/assets/js/modula-wf.js?ver=2.7.3' id='modula-wf-js'></script>
           <script type='text/javascript' src='https://simpleframe.pl/wp-content/plugins/modula/assets/js/modula-pro.js?ver=2.6.1' id='modula-pro-js'></script>
+          
       </Head>
       <Container>
         <Header />
         
        <div className='flex flex-col p-10 space-y-8' >
-        <div className='mb-5 text-4xl font-bold mt-12'>{page.content}</div>
-        
+       <div className='mb-5 text-4xl font-bold mt-12'>{page.content}</div>
+       <div className='mb-5 text-4xl font-bold mt-12'>{page.title}</div>
+       
         <div
-          className='text-base text-grey-darker'
+          
+          className='text-2 text-grey-darker test'
           dangerouslySetInnerHTML={{ __html: page.podstrony?.pierwszaCzescTekstu}}
         ></div>
       
         <div
-          className='text-base text-grey-darker'
+          className='text-base text-grey-darker h2-color:red'
           dangerouslySetInnerHTML={{ __html: page.podstrony?.shortcodeGrid}}
         ></div>
         <div
@@ -61,6 +67,7 @@ function Page(page) {
      
     );
   }
+  
 
 export async function getStaticPaths() {
     const pagesWithSlugs = await getAllPagesWithSlugs();
