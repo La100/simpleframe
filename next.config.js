@@ -4,7 +4,12 @@ if (!process.env.WORDPRESS_API_URL) {
     Add to your environment variables WORDPRESS_API_URL.
   `)
 }
-
+rewrites: async () => [
+  {
+    source: "/public/myfile.html",
+    destination: "/pages/api/myfile.js",
+  },
+],
 /** @type {import('next').NextConfig} */
 module.exports = {
   images: {
@@ -17,3 +22,4 @@ module.exports = {
     ],
   },
 }
+
