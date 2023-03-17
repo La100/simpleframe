@@ -1,5 +1,21 @@
 @tailwind base;
-
+.contentpages h2{
+  @apply text-4xl;
+  @apply font-bold;
+  @apply mb-5;
+  @apply mt-5
+}
+.contentpages a{
+  color:blue
+}
+.contentpages p {
+  margin-bottom: 1em; 
+}
+.contentpages h4 {
+  @apply text-3xl;
+  @apply mb-5;
+  @apply font-bold
+}
 /* Write your own custom base styles here */
 
 /* Start purging... */

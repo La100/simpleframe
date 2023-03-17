@@ -3,7 +3,7 @@ import { EXAMPLE_PATH } from '../lib/constants'
 
 export default function Footer() {
   return (
-    <footer className="text-white body-font absolute w-full bg-black">
+    <footer className="text-white font-semibold absolute w-full bg-black">
       <Container>
       <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
     <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
@@ -14,7 +14,7 @@ export default function Footer() {
         </a>
        
       </div>
-      <p className="mt-4 ml-6 font-light">
+      <p className="mt-4 ml-6 font-semibold">
         ul. Wiertnicza 135A<br/>
 02-952 Warszawa<br/>
 KRS	0000673577<br/>
@@ -24,7 +24,7 @@ Regon	367060762
     </div>
     <div className="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
       <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 className="title-font font-medium text-babyblue tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <h2 className="title-font font-bold text-babyblue tracking-widest text-sm mb-3">CATEGORIES</h2>
         <nav className="list-none mb-10">
           <li>
             <a className="text-white hover:text-babyblue">First Link</a>
@@ -41,7 +41,7 @@ Regon	367060762
         </nav>
       </div>
       <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 className="title-font font-medium text-babyblue tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <h2 className="title-font font-bold text-babyblue tracking-widest text-sm mb-3">CATEGORIES</h2>
         <nav className="list-none mb-10">
           <li>
             <a className="text-white hover:text-babyblue">First Link</a>
@@ -58,7 +58,7 @@ Regon	367060762
         </nav>
       </div>
       <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 className="title-font font-medium text-babyblue tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <h2 className="title-font font-bold text-babyblue tracking-widest text-sm mb-3">CATEGORIES</h2>
         <nav className="list-none mb-10">
           <li>
             <a className="text-white hover:text-babyblue">First Link</a>
@@ -75,7 +75,7 @@ Regon	367060762
         </nav>
       </div>
       <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 className="title-font font-medium text-babyblue tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <h2 className="title-font font-bold text-babyblue tracking-widest text-sm mb-3">CATEGORIES</h2>
         <nav className="list-none mb-10">
           <li>
             <a className="text-white hover:text-babyblue">First Link</a>
@@ -95,7 +95,7 @@ Regon	367060762
   </div>
   <div className="">
     <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-      <p className="text-babyblue text-sm text-center sm:text-left">© 2023 SimpleFrame
+      <p className="text-babyblue fonttext-sm text-center sm:text-left">© 2023 SimpleFrame
         
       </p>
       <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
