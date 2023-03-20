@@ -11,7 +11,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
-
+import Head from 'next/head'
 const produkcje = [
   { name: 'Film Reklamowy', description:'Skuteczna reklama wideo dla Twojego biznesu', href: '/film-reklamowy', icon: ChartPieIcon },
   { name: 'Film Korporacyjny', description: 'Profesjonalna prezentacja Twojej firmy', href: '/film-korporacyjny', icon: CursorArrowRaysIcon },
@@ -52,6 +52,7 @@ export default function Header() {
   return (
     
     <header className="bg-black w-full left-0 z-10 fixed ">
+      
     <nav className="mx-auto flex max-w-8xl items-center justify-between p-6 lg:px-14" aria-label="Global">
       <div className="flex lg:flex-1">
         <a href="/" className="-m-1.5 p-1.5 ">
