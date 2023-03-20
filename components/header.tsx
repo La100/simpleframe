@@ -191,7 +191,7 @@ export default function Header() {
             </Popover.Panel>
           </Transition>
         </Popover>
-        <a href="#" className="text-sm font-semibold leading-6 text-white">
+        <a href="/blog" className="text-sm font-semibold leading-6 text-white">
           Blog
         </a>
       
@@ -209,7 +209,7 @@ export default function Header() {
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Simple Frame</span>
             <img
-              className="h-8 w-auto"
+              className="h-8 w-auto md:hidden"
               src="../logo.png"
               alt=""
             />
@@ -308,7 +308,7 @@ export default function Header() {
                   )}
                 </Disclosure>
               <a
-                href="#"
+                href="/blog"
                 className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white hover:bg-black-50"
               >
                 Blog

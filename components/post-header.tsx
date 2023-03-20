@@ -15,7 +15,7 @@ export default function PostHeader({
     <>
       <PostTitle>{title}</PostTitle>
      
-      <div className="mb-8 md:mb-16 sm:mx-0 mx-auto flex justify-center">
+      <div className="mb-8 md:mb-16 sm:mx-0 mx-auto flex justify-center mt-[100px]">
         <CoverImage title={title} coverImage={coverImage} />
       </div>
     

@@ -25,20 +25,22 @@ export default function Post({ post, posts, preview }) {
   return (
     <Layout preview={preview}>
       <Container>
-        <Header />
+        
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
             <article>
               <Head>
-                <title>
-                  {`${post.title} | Next.js Blog Example with ${CMS_NAME}`}
+                <title >
+                  {`${post.title} `}
                 </title>
                 <meta
                   property="og:image"
                   content={post.featuredImage?.node.sourceUrl}
+                
                 />
+                
               </Head>
               <PostHeader
                 title={post.title}
@@ -46,6 +48,8 @@ export default function Post({ post, posts, preview }) {
                 date={post.date}
                 author={post.author}
                 categories={post.categories}
+          
+                
               />
               <PostBody content={post.content} />
               <footer>
@@ -83,7 +87,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const allPosts = await getAllPostsWithSlug()
 
   return {
-    paths: allPosts.edges.map(({ node }) => `/posts/${node.slug}`) || [],
+    paths: allPosts.edges.map(({ node }) => `/blog/${node.slug}`) || [],
     fallback: true,
   }
 }
+
