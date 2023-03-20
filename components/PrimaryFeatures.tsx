@@ -62,7 +62,7 @@ export function PrimaryFeatures() {
       <div className="absolute top-1/2 left-1/2 -translate-x-[44%] -translate-y-[42%] ">
       
       </div>
-      <Container className="relative">
+      <Container >
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2
             id="features-title"
