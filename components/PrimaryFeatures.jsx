@@ -138,7 +138,7 @@ export function PrimaryFeatures() {
                       <Image
                         src={feature.image}
                         alt=""
-                        layout="fill"
+                       
                         priority
                         sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
                       />

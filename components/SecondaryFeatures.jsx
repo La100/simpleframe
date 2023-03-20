@@ -139,7 +139,7 @@ function FeaturesMobile() {
               <Image
                 src={feature.image}
                 alt=""
-                layout="fill"
+               
                 sizes="52.75rem"
               />
             </div>

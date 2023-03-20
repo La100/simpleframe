@@ -44,7 +44,9 @@ const uslugi = [
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
-
+<head>
+<title>{`Test`}</title>
+</head>
 
 
 export default function Header() {
@@ -191,7 +193,7 @@ export default function Header() {
             </Popover.Panel>
           </Transition>
         </Popover>
-        <a href="/blog" className="text-sm font-semibold leading-6 text-white">
+        <a href="/posts" className="text-sm font-semibold leading-6 text-white">
           Blog
         </a>
       
