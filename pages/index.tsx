@@ -6,8 +6,6 @@ import Layout from '../components/layout'
 import { getAllPostsForHome } from '../lib/api'
 import { motion } from "framer-motion"
 import { Testimonials } from '../components/testimonials'
-import {PrimaryFeatures} from '../components/PrimaryFeatures'
-import {SecondaryFeatures} from '../components/SecondaryFeatures'
 import { Faqs } from '../components/Faqs'
 
 
@@ -33,9 +31,9 @@ export default function Index({ allPosts: { edges }, preview }) {
           </video>
         </div>
       </div>
-    <PrimaryFeatures/>
+ 
     <div className="bg-black" >
-    <SecondaryFeatures />
+  
     </div>
       <Testimonials />
       <Faqs/>

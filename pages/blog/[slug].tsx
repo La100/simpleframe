@@ -67,6 +67,7 @@ export default function Post({ post, posts, preview }) {
 }
 
 export const getStaticProps: GetStaticProps = async ({
+  
   params,
   preview = false,
   previewData,
@@ -78,17 +79,19 @@ export const getStaticProps: GetStaticProps = async ({
       preview,
       post: data.post,
       posts: data.posts,
+      
     },
     revalidate: 10,
   }
+  
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const allPosts = await getAllPostsWithSlug()
 
   return {
-    paths: allPosts.edges.map(({ node }) => `/posts/${node.slug}`) || [],
-    fallback: true,
+    paths: allPosts.edges.map(({ node }) => `/blog/${node.slug}`) || [],
+    fallback: false,
   }
 }
 

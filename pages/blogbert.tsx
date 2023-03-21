@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import { GetStaticProps } from 'next'
-import Container from '../../components/container'
-import MoreStories from '../../components/more-stories'
-import Layout from '../../components/layout'
-import { getAllPostsForHome } from '../../lib/api'
+import Container from '../components/container'
+import MoreStories from '../components/more-stories'
+import Layout from '../components/layout'
+import { getAllPostsForHome } from '../lib/api'
 
 
 export default function Index({ allPosts: { edges }, preview }) {
